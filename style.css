@@ -1,0 +1,73 @@
+body {
+    background-color: #ffe6f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff4da6;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto 20px auto;
+}
+
+.cell {
+    background-color: #ffd6e8;
+    border: 2px solid #ff4da6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ffb3d9;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.reset-button:hover {
+    background-color: #ff1a75;
+}
+
+#message {
+    font-size: 1.2rem;
+    color: #ff4da6;
+    margin-top: 10px;
+}
+
+/* Foto personalizada */
+img {
+    max-width: 300px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 3px solid #ff4da6;
+}
